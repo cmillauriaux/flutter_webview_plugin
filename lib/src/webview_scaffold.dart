@@ -61,7 +61,7 @@ class WebviewScaffold extends StatefulWidget {
   final String invalidUrlRegex;
   final bool geolocationEnabled;
   final bool debuggingEnabled;
-  final Drawer drawer;
+  final Widget drawer;
 
   @override
   _WebviewScaffoldState createState() => _WebviewScaffoldState();
