@@ -34,6 +34,7 @@ class WebviewScaffold extends StatefulWidget {
     this.invalidUrlRegex,
     this.geolocationEnabled,
     this.debuggingEnabled = false,
+    this.drawer,
   }) : super(key: key);
 
   final PreferredSizeWidget appBar;
@@ -60,6 +61,7 @@ class WebviewScaffold extends StatefulWidget {
   final String invalidUrlRegex;
   final bool geolocationEnabled;
   final bool debuggingEnabled;
+  final Drawer drawer;
 
   @override
   _WebviewScaffoldState createState() => _WebviewScaffoldState();
@@ -171,6 +173,7 @@ class _WebviewScaffoldState extends State<WebviewScaffold> {
         },
         child: widget.initialChild ?? const Center(child: const CircularProgressIndicator()),
       ),
+      drawer: widget.drawer
     );
   }
 }

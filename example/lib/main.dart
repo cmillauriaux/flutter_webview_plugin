@@ -29,6 +29,14 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: const Text('Widget WebView'),
             ),
+            drawer: Drawer(
+              child: ListView(children: <Widget>[
+                ListTile(
+                  title: Text("flutter.io"),
+                  leading: Icon(Icons.home),
+                )
+              ],),
+            ),
             withZoom: true,
             withLocalStorage: true,
             hidden: true,
